@@ -3,6 +3,19 @@
 [![Build Status][travis-image]][travis]
 [![License][license-image]][license]
 
+## Polyswarm ECR images
+
+#### Collector Image
+- run `docker pull snowplow-docker-registry.bintray.io/snowplow/scala-stream-collector-kafka:0.15.0`
+- then tag `docker pull snowplow-docker-registry.bintray.io/snowplow/scala-stream-collector-kafka:0.15.0`
+- then push `docker push 005789955001.dkr.ecr.us-east-1.amazonaws.com/snowplow-collector`
+
+#### ETL Image
+- run `docker pull snowplow-docker-registry.bintray.io/snowplow/emr-etl-runner:r114_polonnaruwa`
+- then tag `docker tag snowplow-docker-registry.bintray.io/snowplow/emr-etl-runner:r114_polonnaruwa 005789955001.dkr.ecr.us-east-1.amazonaws.com/snowplow-etl`
+- then push `docker push 005789955001.dkr.ecr.us-east-1.amazonaws.com/snowplow-etl`
+
+
 ## Introduction
 
 This repository contains the Docker images for the following Snowplow components:
